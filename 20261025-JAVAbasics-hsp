@@ -1,0 +1,78 @@
+B 站-韩顺平 JAVA
+20261025
+Lesson1 Java
+1.JAVA 应用
+--企业级系统开发
+--Andriod 应用开发
+--移动领域（车载）应用开发
+
+Lesson2 JAVA 语言介绍
+1.程序
+为了解决问题或执行操作而给计算机输入的一系列指令。
+
+2.JAVA 版本
+JAVA8/11 LTS（long term support)长期支持版
+
+3.JAVA 特性
+--面向对象 OOP
+--健壮的 robust（强类型机制、异常处理、垃圾自动收集等）
+--跨平台性的（编译好的.class 文件可以在多个不同的系统上运行，比如 windows,linux,mac 等-->因为有 JVM）
+--解释型的（解释型语言：JAVAscript,PHP,JAVA;编译型语言：C，C++;)
+
+4.JAVA 开发工具
+editplus
+notepad++
+sublime
+IDEA
+eclipse
+
+学习前期推荐不太智能的工具，比如 sublime;
+公司开发常用 IDEA 和 eclipse，等学习足够深入后，推荐使用。
+
+5.JVM虚拟机
+创建test.JAVA程序（源文件）-->(编译程序) javac--> test.class（字节码文件） -->(运行程序) java-->JVM for Mac/Win/Linux
+-JVM-- JAVA virtual machine 虚拟机
+-JVM 包含在 JDK 中
+-“一次编译，到处运行”。运行的本质是将字节码文件.class 装载到 JVM 虚拟机执行
+
+6.JDK JAVA 开发工具包
+-JDK, JAVA development kit JAVA 开发工具包
+--JDK = JRE + Java 的开发工具（java, javac, javadoc, javap 等）
+-JRE java runtime environment JAVA 运行环境
+--JRE = JVM + Java 的核心类库[库]
+如果只想运行.class文件，只需要 JRE
+
+Lesson3 JAVA 快速入门
+1.Helloworld程序入门
+//这是 Java 的快速入门，演示 Java的开发步骤
+//对代码的说明
+//1.public class Hello 表示 Hello是一个类，是一个 public 公有的类
+//2.Hello{}表示一个类的开始和结束
+//3.public static void main(String[] args)表示一个主方法，即我们程序的入口
+//4.main{}表示方法的开始和结束
+//5.System.out.println("hello,world")表示输出"hello,world"到屏幕
+//6. ;表示语句结束
+
+public class Hello{
+	//编写一个 main方法（表示一个程序的入口）
+	public static void main(String[] args){
+		System.out.println("hello,world~");
+	}
+}
+
+2.课堂练习
+//课堂作业--输出“xxx is studying java!”
+
+public class hellog{
+	public static void main(String[] args){
+		System.out.println("葛 is studying java!");
+	}
+} 
+--注意当存在中文字符时，将文件编码设置为 GBK，否则将会报错
+
+3.Java开发注意事项
+>大小写敏感；
+>语句以;结尾
+>一个源文件中只能有一个 public类，其他类的个数不限。编译后，每一个类都对应一个.class 文件
+>文件名必须要以 public 类命名
+
