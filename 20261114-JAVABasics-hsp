@@ -182,6 +182,20 @@ double num2 = Double.parseDouble(s5);
 s5.charAt(0)
 
 
+2.10 章节作业
+（1）输出姓名，年龄，成绩，性别
+public class C03homework{
+	public static void main(String[] args){
+		String name = "李华";
+		int age = 18;
+		float grade = 99;
+		String gender = "男";
+
+	System.out.println("姓名\t年龄\t成绩\t性别\n" + name + "\t" + age + "\t" + grade + "\t" +gender);
+	} 
+}
+
+
 
 
 
